@@ -1,0 +1,123 @@
+html {
+    box-sizing : border-box;
+}
+
+/* @font-face {
+    font-family: "Bebas Neue";
+    src: url(fonts/Fertigo_PRO.otf);
+}
+@font-face {
+    font-family: MyriadPro;
+    src: url(fonts/MyriadPro.otf);
+}
+@font-face {
+    font-family: PTsansNarrow;
+    src: url(fonts/PTsansNarrow.ttf);
+} */
+
+* {	margin: 0;
+    padding: 0;
+}
+div{
+    /* border: 1px solid red; */
+}
+.header {
+    height: 82px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 30%;
+   
+    
+
+}
+.logo img {
+    margin: 20px 120px;
+    align-self: center;
+    
+}
+.search {
+    width: 40%;
+}
+.bought {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+  position: relative;
+  width: 437px;
+  margin: 20px auto;
+ 
+
+}
+input {
+  width: 435px;
+  height: 37px;
+  margin: 0 auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  outline: none;
+  background: #fff;
+  color: #9E9C9C;
+}
+button {
+  position: absolute; 
+  top: 2px;
+  right: 5px;
+  width: 33px;
+  height: 33px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+button:before {
+  content: url(images/Shape_1.png);
+}
+.bucket {
+    align-self: center;
+}
+.bucket img {
+    margin: 0 auto;
+}
+.money p{
+    align-self: center;
+    margin: 0 4px;
+}
+.navigation {
+    display: flex;
+    height: 37px;
+    background: #4ccfc1;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+    border-top: 
+}
+.navi {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+   
+
+}
+.navi a{
+	text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Bebas Neue";
+    margin: 0 9px;
+}
+
+.nav1 {
+    border-left: 2px solid #fff;
+    margin: 0 4px;
+    
+}
+.cowhide {
+    height: 445px;
+    display: flex;
+    background: #3fbeba;
+    justify-content: center;
+    align-items: center;
+}
