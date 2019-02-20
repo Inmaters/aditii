@@ -2,18 +2,18 @@ html {
     box-sizing : border-box;
 }
 
-/* @font-face {
-    font-family: "Bebas Neue";
-    src: url(fonts/Fertigo_PRO.otf);
+@font-face {
+    font-family: "BebasNeueBold";
+    src: url(fonts/BebasNeueBold.ttf);
 }
 @font-face {
-    font-family: MyriadPro;
-    src: url(fonts/MyriadPro.otf);
+    font-family: "BebasNeueRegular";
+    src: url(fonts/BebasNeueRegular.ttf);
 }
 @font-face {
     font-family: PTsansNarrow;
     src: url(fonts/PTsansNarrow.ttf);
-} */
+}
 
 * {	margin: 0;
     padding: 0;
@@ -23,8 +23,14 @@ div{
 }
 .header {
     height: 82px;
+    
+    
+}
+.inhead {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    margin: 0 10%;
 }
 .logo {
     width: 30%;
@@ -33,17 +39,18 @@ div{
 
 }
 .logo img {
-    margin: 20px 120px;
     align-self: center;
     
 }
 .search {
     width: 40%;
+    display: flex;
+    justify-content: center;
 }
 .bought {
     width: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 form {
@@ -85,33 +92,45 @@ button:before {
 .money p{
     align-self: center;
     margin: 0 4px;
+    color: #a1a1a1;
+    font-family: "BebasNeueBold";
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 19px;
 }
 .navigation {
     display: flex;
     height: 37px;
     background: #4ccfc1;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
-    border-top: 
+    justify-content: center;
+    
 }
 .navi {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-self: center;
-    margin: 0 auto;
+    width: 80%;
    
 
 }
-.navi a{
-	text-decoration: none;
+.nav a{
+    text-decoration: none;
     color: white;
     text-transform: uppercase;
-    font-family: "Bebas Neue";
-    margin: 0 9px;
+    font-family: "BebasNeueRegular";
+    align-self: center;
+    font-size: 21px;
+    
+
 }
 
 .nav1 {
-    border-left: 2px solid #fff;
-    margin: 0 4px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    width: 0px;
+    height: 19px;
+    margin: auto;
     
 }
 .cowhide {
@@ -119,5 +138,664 @@ button:before {
     display: flex;
     background: #3fbeba;
     justify-content: center;
+    
+}
+.incowhide{
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
+    width: 80%;
+
+}
+.polo {
+    margin-left: 5%;
+}
+.standart {
+    margin-left: 15%;
+}
+.standart h1{
+    color: #ffffff;
+    font-family: "BebasNeueBold";
+    font-size: 61px;
+    font-weight: 400;
+    line-height: 54px;
+}
+.standart p{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 28px;
+    margin-top: 5%;
+}
+.btn_shop {
+    margin-top: 30px;
+    width: 133px;
+    height: 40px;
+    border: 3px solid #ffffff;
+    background: #3fbeba;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btn_shop a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "BebasNeueRegular";
+    font-size: 27px;
+    font-weight: 400;
+      
+
+}
+.circle{
+	display: flex;
+	
+	/* margin: auto 0 0 0; */
+}
+/* .circ {
+	display: block;
+	margin: auto 0 0 5px;
+} */
+
+.rad2 {
+	border-radius: 50%;
+	background-color: #fff;
+	width: 10px;
+    height: 10px;
+    margin-top: 45px;
+    margin-right: 10px;
+    
+}
+.rad2:hover{
+	background-color: #7cd8cf;
+}
+.branded {
+    height: 192px;
+    display: flex;
+    justify-content: center;
+}
+.inbrand {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col_1, .col_2, .col_3 {
+    display: flex;
+    justify-content: flex-start;
+}
+.col_2 {
+    border-left: 2px solid #e7e7e7;
+    border-right: 2px solid #e7e7e7;
+}
+.col_1_left, .col_2_left,.col_3_left {
+    display: flex;
+    align-items: center;
+   
+}
+.col_2_left  {
+    margin-left: 20px;
+}
+.col_3_left {
+    margin-left: 55px;
+
+}
+.el_1 {
+    color: #afafaf;
+    font-family: "BebasNeueBold";
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 50px;
+}
+
+.el_2 {
+    border-radius: 5px;
+    width: 59px;
+    height: 32px;
+    background-color: #3cc395;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    
+    
+}
+.el_2 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "BebasNeueBold";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.col_2_right {
+    margin-left: 50px;
+    
+}
+
+.col_3_right {
+    margin-left: 70px;
+}
+.col_1_right, .col_2_right, .col_3_right {
+    display: flex;
+    flex-direction: column;
+
+}
+.featured {
+    height: 67px;
+    background-color: #39beb8;
+    display: flex;
+    align-items: center;
+}
+.featured h3{
+    display: block;
+    color: #ffffff;
+    font-family: "BebasNeueBold";
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 10%;
+}
+.six {
+    height: 640px;
+}
+.six_elem {
+    display: grid;
+    grid-template-columns: 255px 255px 255px;
+    grid-template-rows: 258px 258px;
+    grid-row-gap: 50px;
+    grid-column-gap: 80px;
+    
+    justify-content: center;
+    margin-top: 45px;
+}
+.btn_2 {
+    border-radius: 5px;
+    width: 75px;
+    height: 36px;
+    background-color: #3cc395;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.txt_btn {
+    display: flex;
+    margin-top: 10px;
+}
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #e3e3e3;
+    border-bottom: 6px solid #3cc395;
+    
+}
+.imgs {
+    justify-content: center;
+    margin: 0 auto;
+}
+.element div{
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.element p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #afafaf;
+    font-family: "BebasNeueBold";
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 5px;
+    
+
+}
+.btn_2 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "BebasNeueBold";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.finish {
+    height: 340px;
+     background: #3cc3b5;
+}
+.epilog {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 68%;
+   
+}
+.head {
+    color: #ffffff;
+    font-family: "BebasNeueBold";
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.people {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.footer {
+    display: flex;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    align-items: center;
+    background: #2da89b;
+    height: 45px;
+    justify-content: center;
+    
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.logo img {
+    width: 50%;    
+}
+input {
+    width: 350px;
+    height: 37px;
+    
+}
+.nav a{
+    font-size: 17px;
+    
+
+}
+.standart h1{
+    
+    font-size: 50px;
+    line-height: 40px;
+}
+.standart p{
+    
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    margin-top: 5%;
+}
+.branded {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.inbrand {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.col_1, .col_2, .col_3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.col_1_left, .col_2_left,.col_3_left {
+    display: flex;
+    justify-content: flex-start;
+     margin: 0 auto;
+   
+}
+.col_1_left, .col_2_left, .col_3_left img{
+    margin: 0 auto;
+   
+}
+.col_1_left img {
+    width: 90%;
+}
+
+
+.el_1 {
+    font-size: 23px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.el_2 {
+    border-radius: 5px;
+    width: 55px;
+    height: 30px;
+    background-color: #3cc395;
+    margin: 10px auto;
+
+    
+    
+}
+
+.col_2_right {
+    margin-left: 0px;
+    
+}
+
+.col_3_right {
+    margin-left: 0px;
+}
+.col_1_right, .col_2_right, .col_3_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.six {
+    height: 500px;
+}
+.six_elem {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-row-gap: 20px;
+    grid-column-gap: 50px;
+    
+    justify-content: center;
+    margin-top: 45px;
+}
+.btn_2 {
+    width: 60px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.txt_btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.element p{
+    font-size: 20px;
+    line-height: 25px;  
+
+}
+.head {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+.header {
+    height: 120px;
+    
+    
+}
+.inhead {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+}    
+    
+.logo img {
+    /* width: 40%;  */
+    /* margin: 0 auto; */
+    
+}
+.bucket img {
+    width: 90%;
+}
+.money p {
+    font-size: 20px;
+}
+.logo {
+    width: 50%; 
+    /* margin: auto; */
+    display: flex;
+     justify-content: center;
+
+}
+input {
+    width: 200px;
+    height: 26px;
+    
+}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0px auto;
+ 
+
+}
+
+button {
+  position: absolute; 
+  top: 2px;
+  right: 5px;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    width: 0;
+}
+.bought {
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation {
+    height: 70px;
+}
+.navi {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    width: 80%;
+    flex-wrap: wrap;
+   
+
+}
+.nav1{
+    margin: 0 5px;
+}
+.nav a{
+    font-size: 13px;
+    
+
+}
+.incowhide{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 80%;
+
+}
+
+.polo img{
+    width: 50%;
+}
+.polo {
+    margin-left: 0;
+}
+.standart{
+    margin-left: 0;
+}
+.standart h1{
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 20px;
+}
+.standart p{
+    
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-top: 5%;
+}
+.btn_shop {
+    margin-top: 10px;
+    width: 70px;
+    height: 20px;
+    
+    
+}
+.btn_shop a {
+    
+    font-size: 14px;
+    
+      
+
+}
+.rad2 {
+	
+    margin-top: 15px;
+    margin-right: 10px;
+    
+}
+.cowhide {
+    height: 230px;
+}
+.branded {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.inbrand {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.col_1, .col_2, .col_3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.col_1_left, .col_2_left,.col_3_left {
+    display: flex;
+    justify-content: flex-start;
+     margin: 0 auto;
+   
+}
+.col_1_left, .col_2_left, .col_3_left img{
+    margin: 0 auto;
+   
+}
+.col_1_left img {
+    width: 90%;
+}
+
+
+.el_1 {
+    font-size: 23px;
+    line-height: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.el_2 {
+    border-radius: 5px;
+    width: 55px;
+    height: 30px;
+    background-color: #3cc395;
+    margin: 10px auto;
+
+    
+    
+}
+
+.col_2_right {
+    margin-left: 0px;
+    
+}
+
+.col_3_right {
+    margin-left: 0px;
+}
+.col_1_right, .col_2_right, .col_3_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.six {
+    height: 30%;
+}
+.six_elem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+    justify-content: center;
+    margin-top: 15px;
+}
+.btn_2 {
+    width: 40px;
+    height: 25px;
+    
+    
+}
+.btn_2 a{
+    font-size: 13px;
+}
+.txt_btn p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.head {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.finish {
+    height: 160px;
+     background: #3cc3b5;
+}
+.epilog {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+   
+}
+
+.people {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.footer {
+    height: 30px;
+}
+.footer p {
+    font-size: 8px;
+}
+
 }
